@@ -1,0 +1,65 @@
+:root {
+  --primary-bg: #fff;
+  --primary-text: #2a2a2a;
+  --primary-icon: #000;
+  --header-menu-border: rgb(42 42 42 / 10%);
+  --step-line-done: #000;
+  --step-line-undone: #f0f0f5;
+  --step-text-done: var(--primary-text);
+  --step-text-undone: #afb1bd;
+  --step-num-done: #fff;
+  --step-num-bg-done: #333;
+  --step-num-border-undone: #afb1bd;
+  --form-input-label: #808080;
+  --form-input-border: #f0f0f5;
+  --form-input-border-active: #2a2a2a;
+  --form-radio-circle-border: #2a2a2a;
+  --form-radio-circle-inside: #fff;
+  --form-radio-circle-bg: #fff;
+  --form-radio-label-second: #808080;
+  --form-input-placeholder: #999;
+  --btn-section-border-top: #e6e6eb;
+  --btn-border: #808080;
+  --next-btn-bg: #f67599;
+  --prev-btn-text: #000;
+  --next-btn-text: #fff;
+  --cart-border: #f0f0f5;
+  --cart-bg: #f6f7f8;
+  --cart-icon: #000;
+  --cart-icon-bg: #f0f0f5;
+  --footer-bg: #e5e5e5;
+  --footer-text: #808080;
+}
+
+[data-theme='dark'] {
+  --primary-bg: #121212;
+  --primary-text: #fff;
+  --primary-icon: #fff;
+  --header-menu-border: #5e5e5e;
+  --step-line-done: #fff;
+  --step-line-undone: rgb(240 240 245 / 40%);
+  --step-text-done: #fff;
+  --step-text-undone: rgb(255 255 255 / 40%);
+  --step-num-done: #fff;
+  --step-num-bg-done: #333;
+  --step-num-border-undone: #afb1bd;
+  --form-input-label: rgb(255 255 255 / 40%);
+  --form-input-border: #5e5e5e;
+  --form-input-border-active: #fff;
+  --form-radio-circle-border: #333;
+  --form-radio-circle-inside: #fff;
+  --form-radio-circle-bg: #333;
+  --form-radio-label-second: #5e5e5e;
+  --form-input-placeholder: rgb(255 255 255 / 40%);
+  --btn-section-border-top: rgb(255 255 255 / 20%);
+  --btn-border: rgb(255 255 255 / 20%);
+  --next-btn-bg: #f67599;
+  --prev-btn-text: #fff;
+  --next-btn-text: #fff;
+  --cart-border: rgb(255 255 255 / 20%);
+  --cart-bg: #383838;
+  --cart-icon: #333;
+  --cart-icon-bg: #808080;
+  --footer-bg: #333;
+  --footer-text: rgb(255 255 255 / 60%);
+}

@@ -1,0 +1,135 @@
+@import '../helpers/variable';
+@import '../helpers/color';
+@import '../helpers/reset';
+
+// mobile first
+
+header {
+  @extend %header-shadow;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: var(--header-height-mobile);
+  color: var(--primary-text);
+  background-color: var(--primary-bg);
+  z-index: 999;
+
+  .navbar__brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+
+    &--logo {
+      margin-right: 0.3rem;
+      width: 24px;
+    }
+
+    &--title {
+      font-size: 24px;
+    }
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: inherit;
+    z-index: 30;
+    transition: transform 0.3s ease-out;
+    transform: scale(1, 0);
+    transform-origin: top;
+
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      padding: 0 1rem;
+
+      &__item {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--header-menu-border);
+
+        &:hover {
+          color: var(--footer-text);
+        }
+      }
+    }
+
+    &__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 0;
+      color: var(--primary-icon);
+
+      &__item {
+        padding: 0 1rem;
+
+        // .search {
+        //   background-image: url('/public/icons/search.png');
+        //   object-fit: cover;
+        // }
+      }
+    }
+  }
+
+  .menu__toggle {
+    &--label {
+      position: absolute;
+      top: 20px;
+      left: var(--mobile-edge-width);
+    }
+
+    &--hamburger {
+      width: 22px;
+    }
+
+    &__input:checked ~ .nav {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+// desktop
+@media screen and (min-width: 820px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 var(--desktop-edge-width);
+    height: var(--header-height-desktop);
+
+    .navbar__brand {
+      position: absolute;
+      margin: 0 auto;
+    }
+
+    .nav {
+      all: unset;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      &__menu {
+        all: unset;
+        display: flex;
+
+        &__item {
+          all: unset;
+          margin-right: 0.5rem;
+          align-self: center;
+        }
+      }
+    }
+
+    .menu__toggle {
+      &--label {
+        position: absolute;
+        display: none;
+      }
+    }
+  }
+}
