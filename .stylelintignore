@@ -1,0 +1,11 @@
+package.json
+node_modules
+/dist
+/build
+/public
+.DS_Store
+.gitignore
+.eslintignore
+.prettierignore
+*.html
+*.js
