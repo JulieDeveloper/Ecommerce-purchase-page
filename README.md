@@ -1,5 +1,25 @@
-# Ecommerce-purchase-page(vanilla JS, SCSS, webpack)
+# E-commerce Purchase Page
+A demo of dynamic purchase page created by vanilla JS, SCSS
+- Designed and built with Mobile First Strategy, which is focus on smartphone device and desktop.
+- Support Dark Mode user interface
 
+![image](https://github.com/JulieDeveloper/Ecommerce-purchase-page/blob/main/README/screenshot-desktop.png)
+![image](https://github.com/JulieDeveloper/Ecommerce-purchase-page/blob/main/README/screenshot-desktop(dark).png)
+![image](https://github.com/JulieDeveloper/Ecommerce-purchase-page/blob/main/README/screenshot-mobile.png)
+
+![image](https://github.com/JulieDeveloper/Ecommerce-purchase-page/blob/main/README/screenshot-mobile(dark).png)
+
+
+## Technologies
+
+Project is built with:
+- Node.js v16.14.0
+- sass-loader: v8.0.2
+- css-loader v3.5.3
+- mini-css-extract-plugin v0.9.0
+- webpack v4.43.0
+- webpack-cli v3.3.11
+- webpack-dev-server v4.10.0
 
 ## Setup
 
@@ -43,19 +63,7 @@ The installation is completed once you received the message on the terminal as:
 "Compiled successfully!"
 ```
 
-
-## Technologies
-
-Project is built with:
-- Node.js v16.14.0
-- sass-loader: v8.0.2
-- css-loader v3.5.3
-- mini-css-extract-plugin v0.9.0
-- webpack v4.43.0
-- webpack-cli v3.3.11
-- webpack-dev-server v4.10.0
-
-
+## Tools
 - eslint v8.22.0
 - eslint-config-standard v17.0.0
 - eslint-loader v4.0.2
@@ -76,3 +84,4 @@ Project is built with:
 - prettier-webpack-plugin v1.2.0
 - eslint-config-prettier v8.5.0
 - eslint-plugin-prettier v4.2.1
+
